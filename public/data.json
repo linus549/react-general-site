@@ -1,0 +1,37 @@
+[
+  {
+    "avatar": "./avatars/deepimpact.png",
+    "avatarDark": "./avatars/deepimpact-dark.png",
+    "name": "Hunter Adkins",
+    "role": "Front-end Developer",
+    "handle": "deepimpact"
+  },
+  {
+    "avatar": "./avatars/squirrel.png",
+    "avatarDark": "./avatars/squirrel-dark.png",
+    "name": "Yvonne Miranda",
+    "role": "Back-end Developer",
+    "handle": "squirrel"
+  },
+  {
+    "avatar": "./avatars/pigweasel.png",
+    "avatarDark": "./avatars/pigweasel-dark.png",
+    "name": "Leo Nunez",
+    "role": "Web Designer",
+    "handle": "pigweasel"
+  },
+  {
+    "avatar": "./avatars/owlfloral.png",
+    "avatarDark": "./avatars/owlfloral-dark.png",
+    "name": "Merryn Maxwell",
+    "role": "Full-stack Developer",
+    "handle": "owlfloral"
+  },
+  {
+    "avatar": "./avatars/ryederecho.png",
+    "avatarDark": "./avatars/ryederecho-dark.png",
+    "name": "Trevor Green",
+    "role": "Team Manager",
+    "handle": "ryederecho"
+  }
+]
