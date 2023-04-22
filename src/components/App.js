@@ -26,7 +26,10 @@ function App() {
 
   const handleSidebarClose = useCallback(() => {
     setIsSidebarOpen(false);
-    menuButtonRef.current.focus();
+
+    menuButtonRef.current.focus({
+      preventScroll: true,
+    });
   }, []);
 
   useEffect(
