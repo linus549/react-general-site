@@ -7,12 +7,10 @@ import Navigation from "components/Sidebar/Navigation";
 
 function Sidebar({ open, lastSidebarItemRef, theme, onThemeChange, onClose }) {
   useEffect(
-    function manageEventListeners() {
+    function manageKeydownListener() {
       if (open) {
-        window.addEventListener("resize", onClose);
         document.addEventListener("keydown", handleDocumentKeyDown);
       } else {
-        window.removeEventListener("resize", onClose);
         document.removeEventListener("keydown", handleDocumentKeyDown);
       }
 
@@ -23,11 +21,25 @@ function Sidebar({ open, lastSidebarItemRef, theme, onThemeChange, onClose }) {
       }
 
       return () => {
-        window.removeEventListener("resize", onClose);
         document.removeEventListener("keydown", handleDocumentKeyDown);
       };
     },
     [open, onClose]
+  );
+
+  useEffect(
+    function manageMediaQueryListener() {
+      function handleChange(e) {
+        if (e.matches) {
+          onClose();
+        }
+      }
+
+      mediaQueryList.addEventListener("change", handleChange);
+
+      return () => mediaQueryList.removeEventListener("change", handleChange);
+    },
+    [onClose]
   );
 
   function handleNavigationClick() {
@@ -57,6 +69,8 @@ function Sidebar({ open, lastSidebarItemRef, theme, onThemeChange, onClose }) {
     </StyledSidebar>
   );
 }
+
+const mediaQueryList = window.matchMedia(`(min-width: ${breakpoints.LARGE})`);
 
 const StyledSidebar = styled.div`
   position: relative;
