@@ -6,7 +6,7 @@ function Navigation({ lastSidebarItemRef, onClick }) {
   const { pathname } = useLocation();
 
   return (
-    <nav onClick={onClick}>
+    <StyledNavigation onClick={onClick}>
       <ul>
         <NavItem>
           <Link to="/getstarted">Get Started</Link>
@@ -32,9 +32,13 @@ function Navigation({ lastSidebarItemRef, onClick }) {
           )}
         </NavItem>
       </ul>
-    </nav>
+    </StyledNavigation>
   );
 }
+
+const StyledNavigation = styled.nav`
+  font-size: var(--font-size-md);
+`;
 
 const NavItem = styled.li`
   &:not(:last-of-type) {

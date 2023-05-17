@@ -9,14 +9,14 @@ function GetStarted() {
   return (
     <>
       <Content>
-        <div>
+        <TextContainer>
           <Heading>Brand Name</Heading>
           <Text>
             We are a group of passionate developers working on homebrews,
             emulators and documentation for the Nintendo Game Boy handheld
             console, the original gray brick from 1989!
           </Text>
-        </div>
+        </TextContainer>
 
         <Image />
       </Content>
@@ -37,9 +37,18 @@ const Content = styled.div`
   display: flex;
   margin-bottom: var(--spacing-xl);
 
-  @media (max-width: ${breakpoints.SMALL_SUB}) {
+  @media (max-width: ${breakpoints.MEDIUM_SUB}) {
     flex-direction: column;
     align-items: center;
+  }
+`;
+
+const TextContainer = styled.div`
+  margin-bottom: var(--spacing-xl);
+
+  @media (min-width: ${breakpoints.MEDIUM}) {
+    margin-right: var(--spacing-md);
+    margin-bottom: 0;
   }
 `;
 
@@ -50,8 +59,8 @@ const Heading = styled.h1`
 const Text = styled.p`
   font-size: var(--font-size-lg);
 
-  @media (min-width: ${breakpoints.SMALL}) {
-    margin-right: var(--spacing-md);
+  @media (max-width: ${breakpoints.MEDIUM_SUB}) {
+    margin-bottom: 0;
   }
 `;
 
@@ -61,6 +70,7 @@ const Image = styled(BoxIcon)`
 `;
 
 const LinkContainer = styled.div`
+  font-size: var(--font-size-md);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

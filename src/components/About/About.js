@@ -62,7 +62,7 @@ const CommunityLinkList = styled.ul`
 `;
 
 const IconWrapper = styled.div`
-  width: 2.5rem;
+  width: 2.25rem;
 `;
 
 const communityItems = [

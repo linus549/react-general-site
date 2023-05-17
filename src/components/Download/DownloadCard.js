@@ -46,7 +46,7 @@ const StyledDownloadCard = styled.article(
 const IconWrapper = styled.div`
   flex-shrink: 0;
   color: ${({ theme }) => theme.primary};
-  width: 2.25rem;
+  width: 2rem;
   margin-right: var(--spacing-md);
 `;
 
@@ -61,7 +61,7 @@ const Description = styled.p`
 `;
 
 const FeaturesTitle = styled.h3`
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-sm);
   margin-bottom: var(--spacing-sm);
 `;
 
@@ -75,7 +75,7 @@ const Feature = styled.li`
 
   ::marker {
     content: "✔ ";
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-md);
     color: ${({ theme }) => theme.primary};
     margin-right: 1rem;
   }

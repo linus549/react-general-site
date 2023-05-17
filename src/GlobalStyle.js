@@ -40,7 +40,6 @@ const GlobalStyle = createGlobalStyle(
 
     body {
       font-family: "Roboto", sans-serif;
-      font-size: var(--font-size-md);
       line-height: 1.5;
       color-scheme: ${theme.colorScheme};
       color: ${theme.text};

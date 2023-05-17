@@ -27,7 +27,7 @@ function Documentation() {
         <Important>
           Volutpat ac tincidunt vitae semper quis lectus nulla at volutpat.
           Dolor morbi non arcu risus. Consequat ac felis donec et odio
-          pellentesque diam volutpat commodo dore.
+          pellentesque diam volutpat commodo dore dignissim enim.
         </Important>
       </TextSection>
 
@@ -106,7 +106,7 @@ function Documentation() {
         <Important>
           Volutpat ac tincidunt vitae semper quis lectus nulla at volutpat.
           Dolor morbi non arcu risus. Consequat ac felis donec et odio
-          pellentesque diam volutpat commodo dore.
+          pellentesque diam volutpat commodo dore dignissim enim.
         </Important>
 
         <h3 id="subheading-3">Subheading</h3>

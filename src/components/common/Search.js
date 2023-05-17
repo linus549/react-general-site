@@ -37,7 +37,7 @@ const Input = styled.input`
 `;
 
 const SearchIcon = styled(Icon)`
-  width: 1.5rem;
+  width: 1.25rem;
   margin-right: var(--spacing-sm);
 `;
 

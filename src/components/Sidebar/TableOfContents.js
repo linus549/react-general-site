@@ -154,7 +154,7 @@ function getNestedHeadings(headingElements) {
 }
 
 const StyledHeadings = styled.ul`
-  font-size: var(--font-size-sm);
+  font-size: initial;
   padding-left: var(--spacing-lg);
 
   li.active > a {

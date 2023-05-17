@@ -32,7 +32,7 @@ const Select = styled.select`
 `;
 
 const ThemeIcon = styled(Icon)`
-  width: 1.5rem;
+  width: 1.25rem;
   margin-right: var(--spacing-sm);
 `;
 
