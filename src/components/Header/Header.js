@@ -39,6 +39,7 @@ const StyledHeader = styled.header(
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    height: var(--header-height);
     background-color: ${theme.foreground};
     border-bottom: var(--divider-width) solid ${theme.divider};
     padding: var(--spacing-sm);

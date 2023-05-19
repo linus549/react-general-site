@@ -81,8 +81,8 @@ const Backdrop = styled.div(
   ({ $show }) => css`
     visibility: hidden;
     position: fixed;
-    width: 100vw;
-    height: 100vh;
+    width: 100dvw;
+    height: 100dvh;
     background-color: #000;
     opacity: 0;
 
@@ -108,7 +108,7 @@ const Panel = styled.div(
     flex-shrink: 0;
     position: fixed;
     width: 100%;
-    height: calc(100vh - var(--header-height));
+    height: calc(100dvh - var(--header-height));
     overflow-y: auto;
     padding: var(--spacing-lg) var(--spacing-xl);
     padding-left: 0;
