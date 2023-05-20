@@ -1,3 +1,4 @@
+export const SCROLL_DELAY = 100;
 export const FETCH_DELAY = 3000;
 
 export const ROUTE_TITLE_MAP = {

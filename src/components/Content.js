@@ -1,7 +1,7 @@
 import { useRef, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import styled from "styled-components";
-import { breakpoints } from "config";
+import { SCROLL_DELAY, breakpoints } from "config";
 
 function Content({ children }) {
   const elementRef = useRef(null);
@@ -10,7 +10,7 @@ function Content({ children }) {
   useEffect(
     function scrollToTop() {
       if (hash === "") {
-        elementRef.current.scroll(0, 0);
+        setTimeout(() => elementRef.current.scroll(0, 0), SCROLL_DELAY);
       }
     },
     [pathname, hash]
