@@ -69,7 +69,14 @@ const GlobalStyle = createGlobalStyle(
       margin-bottom: 0.5rem;
     }
 
+    h1,
+    h2,
+    h3 {
+      max-width: 30ch;
+    }
+
     p {
+      max-width: 70ch;
       color: ${theme.textAlt};
       margin-bottom: 1rem;
     }
