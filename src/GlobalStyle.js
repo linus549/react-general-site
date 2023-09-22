@@ -131,20 +131,13 @@ const GlobalStyle = createGlobalStyle(
       color: ${theme.primaryAlt};
     }
 
-    /* fallback if :focus-visible is not supported */
-    *:focus {
-      outline: var(--focus-outline-width) solid ${theme.primary};
-      outline-offset: var(--focus-outline-offset);
-    }
-
-    /* if :focus-visible is supported */
-    *:focus:not(:focus-visible) {
-      outline: none;
-    }
-
     *:focus-visible {
       outline: var(--focus-outline-width) solid ${theme.primary};
       outline-offset: var(--focus-outline-offset);
+    }
+
+    *:focus:not(:focus-visible) {
+      outline: none;
     }
 
     ::selection {
